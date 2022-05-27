@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  text-align: center;
+}
+
+.box {
+  border: 3px solid black;
+  width: 33%;
+  height: 50%;
+  text-align: center;
+  margin: 50px;
+}
+.alert {
+  border: 3px solid red;
+  position: relative;
+  border-width: 2px;
+  width: 60%;
+  height: 723px;
+  margin: 35px;
+  align-items: center;
+  text-align: center;
+  float: right;
+}
