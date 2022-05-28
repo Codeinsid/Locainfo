@@ -4,39 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Static Template</title>
+    <link rel="stylesheet" href="form.css" />
+    <title>Admin</title>
   </head>
   <body>
-    <h1 class="title">
-      Locainfo
-    </h1>
-    <a href="form.html">Formulario</a>
-    <div class="alert">
-      <h1>Hospedagem</h1>
-      <p>Funcional</p>
-    </div>
-    <section class="products">
-      <div class="box">
-        <h1>Hospedagem</h1>
-        <p>Funcional</p>
-      </div>
-      <div class="box">
-        <h1>Hospedagem</h1>
-        <p>Funcional</p>
-      </div>
-      <div class="box">
-        <h1>Hospedagem</h1>
-        <p>Funcional</p>
-      </div>
-      <div class="box">
-        <h1>Hospedagem</h1>
-        <p>Funcional</p>
-      </div>
-      <div class="box">
-        <h1>Hospedagem</h1>
-        <p>Funcional</p>
-      </div>
+    <section class="form-container">
+      <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="./logo.png" alt="logo locaweb" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Usuário</b></label>
+          <input
+            type="text"
+            placeholder="Digite o Usuário"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Senha</b></label>
+          <input
+            type="password"
+            placeholder="Digite a Senha"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Login</button>
+        </div>
+      </form>
     </section>
   </body>
 </html>
