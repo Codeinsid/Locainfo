@@ -17,3 +17,9 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3500); // Change image every 2 seconds
 }
+function Mycolor() {
+  var element = document.getElementById("myID");
+  element.style.backgroundColor='#900';
+  element.style.color="#fff"
+  }
+

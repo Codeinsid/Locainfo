@@ -1,33 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <style type="text/css">
-        div{
-            cursor:pointer;
-            height:45px;
-            width:300px;
-            margin:5px;
-            background: lightblue;
-        }
-        </style>
-        <script type="text/javascript">
-            function selecionar(k){
-                var x = document.getElementsByClassName("camaleao");
-                var i;
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.background = "lightblue"
-                }
-                document.getElementById(k).style.background = "red";                
-            }
-        </script>
-    </head>
-    <body>
-        <div onclick="selecionar(this.id);" class="camaleao" id="div_1">DIV 1</div>
-        <div onclick="selecionar(this.id);" class="camaleao" id="div_2">DIV 2</div>
-        <div onclick="selecionar(this.id);" class="camaleao" id="div_3">DIV 3</div>
-        <div onclick="selecionar(this.id);" class="camaleao" id="div_4">DIV 4</div>
-        <div onclick="selecionar(this.id);" class="camaleao" id="div_5">DIV 5</div>
-        <span>Outras divs...</span>
-    </body>
+<head>
+    <title></title>
+</head>
+<body>
+<button onClick="Mycolor()">Change Color</button>
+<div id="myID">Hello World</div>
+<script type='text/javascript'>
+function Mycolor() {
+var element = document.getElementById("myID");
+element.style.backgroundColor='#900';
+element.style.color="#fff"
+}
+
+
+</script>
+<h1 id="Myelement" 
+onclick="changeColor()">
+ GeeksforGeeks
+</h1>
+<input name="MyColorPicker" 
+    type="color"
+    id="ColorPicker1" />
+<script>
+ function changeColor() {
+     document.getElementById("Myelement").style.color =
+         document.getElementById("ColorPicker1").value;
+ }
+</script>
+</body>
 </html>
